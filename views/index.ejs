@@ -2,19 +2,21 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>GET 요청 실습</title>
+    <title>Express 실습</title>
 </head>
 <body>
+    <h2>GET 요청 실습</h2>
     <form action="/search" method="GET">
-        <label>
-            값 1 <input type="text" name="value1">
-        </label>
-        <br>
-        <label>
-            값 2 <input type="text" name="value2">
-        </label>
-        <br>
+        값 1 <input type="text" name="value1">
+        값 2 <input type="text" name="value2">
         <button type="submit">검색</button>
+    </form>
+
+    <hr> <h2>POST 요청 실습</h2>
+    <form action="/submit-form" method="POST">
+        값 1 <input type="number" name="value1">
+        값 2 <input type="number" name="value2">
+        <button type="submit">제출</button>
     </form>
 </body>
 </html>
